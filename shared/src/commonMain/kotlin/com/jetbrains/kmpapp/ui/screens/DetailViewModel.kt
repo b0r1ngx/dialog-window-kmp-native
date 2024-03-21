@@ -1,4 +1,4 @@
-package com.jetbrains.kmpapp.screens
+package com.jetbrains.kmpapp.ui.screens
 
 import com.jetbrains.kmpapp.data.MuseumObject
 import com.jetbrains.kmpapp.data.MuseumRepository
