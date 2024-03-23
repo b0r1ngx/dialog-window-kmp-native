@@ -2,8 +2,8 @@ package com.jetbrains.kmpapp
 
 import android.app.Application
 import com.jetbrains.kmpapp.di.initKoin
-import com.jetbrains.kmpapp.screens.DetailViewModel
-import com.jetbrains.kmpapp.screens.ListViewModel
+import com.jetbrains.kmpapp.ui.screens.DetailViewModel
+import com.jetbrains.kmpapp.ui.screens.ListViewModel
 import org.koin.dsl.module
 
 class MuseumApp : Application() {

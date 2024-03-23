@@ -34,6 +34,7 @@ import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 import com.jetbrains.kmpapp.R
 import com.jetbrains.kmpapp.data.MuseumObject
+import com.jetbrains.kmpapp.ui.screens.DetailViewModel
 import org.koin.androidx.compose.koinViewModel
 
 @Composable
