@@ -20,6 +20,7 @@ kotlin {
         iosSimulatorArm64()
     ).forEach { iosTarget ->
         iosTarget.binaries.framework {
+            binaryOption("bundleId", "dev.boringx.dialog")
             baseName = "Shared"
             isStatic = true
         }

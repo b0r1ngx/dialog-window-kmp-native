@@ -25,7 +25,7 @@ struct DetailView: View {
     }
 }
 
-struct ObjectDetails: View {
+private struct ObjectDetails: View {
     var obj: MuseumObject
     
     var body: some View {
@@ -64,7 +64,7 @@ struct ObjectDetails: View {
     }
 }
 
-struct LabeledInfo: View {
+private struct LabeledInfo: View {
     var label: String
     var data: String
     

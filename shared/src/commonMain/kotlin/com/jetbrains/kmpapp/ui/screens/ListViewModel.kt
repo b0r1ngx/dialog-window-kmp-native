@@ -10,5 +10,5 @@ import kotlinx.coroutines.flow.StateFlow
 class ListViewModel(museumRepository: MuseumRepository) : KMMViewModel() {
     val objects: StateFlow<List<MuseumObject>> =
         museumRepository.getObjects()
-            .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), emptyList())
+            .stateIn(viewModelScope, SharingStarted.WhileSubscribed(stopTimeoutMillis = 5000), emptyList())
 }

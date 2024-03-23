@@ -3,6 +3,7 @@ import Shared
 
 @main
 struct iOSApp: App {
+    
     init() {
         KoinKt.doInitKoin()
     }

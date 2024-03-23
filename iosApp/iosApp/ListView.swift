@@ -14,6 +14,7 @@ struct ListView: View {
         GridItem(.adaptive(minimum: 120), alignment: .top)
     ]
     
+    // TODO: Add pagination to viewModel, and then here!
     var body: some View {
         ZStack {
             if !objects.isEmpty {
@@ -31,6 +32,10 @@ struct ListView: View {
                     }
                 }
             } else {
+                // Current behaviour: when user start the app, he anyway seeing No data available
+                // TODO: Change behaviour! Not show Text("No.."), at start of awaiting the task run (when we not get any info from viewModel (do we need check user allowness of connection to internet, to fast say that you have no internet or msth like this, )
+                // (this app is just an template to start from. I want to research how it can be realised
+                //  and used to have a good behaviour for user)
                 Text("No data available")
             }
         }.task {
@@ -41,7 +46,7 @@ struct ListView: View {
     }
 }
 
-struct ObjectFrame: View {
+private struct ObjectFrame: View {
     let obj: MuseumObject
     let onClick: () -> Void
     
